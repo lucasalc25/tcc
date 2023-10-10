@@ -9,27 +9,19 @@
 </head>
 
 <body>
-    <section class="area-login">
-            <div class="col-md-6 login-form">
-                <div class="logo">
-                    <img src="/images/logo.png">
-                </div>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Matrícula *" value="" />
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Senha *" value="" />
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="btnSubmit" value="Login" />
-                    </div>
-                    <div class="form-group">
-                        <a href="#" class="ForgetPwd" value="Login">Esqueceu a senha?</a>
-                    </div>
-
-                </form>
+    <div class="container">
+        <form class="login-form" action="#">
+            <img src="/images/logo.png" alt="#">
+            <label for="username">Matrícula:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="options">
+                <a href="#">Esqueceu a senha?</a>
+                <a href="#">Cadastre-se</a>
             </div>
+            <button type="submit">Entrar</button>
+        </form>
     </div>
 </body>
 </html>
