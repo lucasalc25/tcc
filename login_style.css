@@ -14,9 +14,9 @@ body {
 
 .login-form {
     background-color: #ffffff;
-    width: 36%;
+    width: 34%;
     height: 50%;
-    padding: 30px;
+    padding: 30px 30px 15px 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -44,19 +44,11 @@ input[type="password"] {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
-.options {
-    margin: 2% 15% 8% 15%;
-    display: flex;
-    justify-content: space-between;
-}
-
-a {
-    text-decoration: none;
-    color: #007bff;
-    text-align: center;
+.button {
+    margin: 3% auto 5% auto;
 }
 
 button {
@@ -68,6 +60,22 @@ button {
     cursor: pointer;
 }
 
-a:hover {
-    text-decoration: underline;
+button:hover {
+    background-color: #0054ae;
 }
+
+.options {
+    margin: 3% 8%;
+    padding: 10px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    text-align: left;
+}
+
+
+

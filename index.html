@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de TCC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index_style.css">
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="/images/logo.png" alt="logo" width="110" height="40">
-        </a>
-        <div class="collapse navbar-collapse" id="Menu">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="/login.html">Login</a>
-              <a class="nav-link" href="#">Cadastre-se</a>
-              <a class="nav-link" href="#">Fórum</a>
+<header class="header">
+    <div class="menu-container">
+      <a href="#"><img src="/images/logo.png" alt="logo"></a>
+      <ul>
+        <li><a href="/index.html" active>Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Orientadores</a></li>
+        <li><a href="#">Áreas</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><div class="search">
+          <form action="#" method="get" placeholder="O que deseja pesquisar?">
+            <input type="text" name="search" id="search">
+            <div class="btnSearch">
+              <button type="submit">Pesquisar</button>
             </div>
-          </div>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-          <button class="btn btn-outline-warning me-2" type="submit">Pesquisar</button>
-        </form>
-      </div>
-</nav>
+          </form>  
+        </div></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 <body>
    
