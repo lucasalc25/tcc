@@ -24,11 +24,11 @@ body {
 }
 
 .login-form {
-    background-color: #00438a;
-    width: 30%;
-    height: 55%;
+    background-color: #ffff;
+    width: 27rem;
+    height: 27rem;
     padding: 15px 20px;
-    border-radius: 5px;
+    border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -49,18 +49,21 @@ label {
     justify-content: start;
     margin-bottom: 5px;
     margin-left: 14%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    color: #fff;
+    color: #000000;
 }
 
 input[type="text"],
 input[type="password"] {
     width: 72%;
-    padding: 5px;
+    padding: 7px 14px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    border-width: 1px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118));
 }
 
 .button {
@@ -68,33 +71,33 @@ input[type="password"] {
 }
 
 button {
-    background-color: #fff;
-    color: #000;
+    background-color: #4976EE;
+    color: #ffff;
     padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 7px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #00b0ff;
+    background-color: #0e49eb;
 }
 
 .options {
     margin: 3% 8%;
-    padding: 10px 15px 0 0;
+    padding: 10px 25px 0 25px;
     display: flex;
     justify-content: space-between;
 }
 
 a {
+    font-size: 14px;
     text-decoration: none;
-    color: #ffffff;
     text-align: left;
 }
 
 a:hover {
-    color: #00b0ff;
+    color: #0e49eb;
 }
 
 

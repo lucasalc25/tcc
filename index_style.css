@@ -45,25 +45,40 @@ header {
 .navbar-left{
     display: flex;
     align-items: center;
+    margin-left: .7rem;
 }
 
 
 .navbar-left a {
+    position: relative;
     font-weight: 700;
     color: #ffff;
     text-decoration: none;
     margin: 15px;
+    padding: 0;
 }
 
-.navbar-left a:hover {
+.navbar-left a::before {
+    content: '';
     color: yellow;
+    background: yellow;
+    position:absolute;
+    top:100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .3s;
+}
+
+.navbar-left a:hover::before {
+    width: 100%;
 }
 
 .navbar-right{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5rem;
+    margin-left: 7rem;
 }
 
 .navbar-right a {
@@ -71,6 +86,10 @@ header {
     color: #ffff;
     text-decoration: none;
     margin: 10px;
+}
+
+.navbar-right a:hover {
+    color: yellow;
 }
 
 form {
@@ -102,7 +121,8 @@ input {
 button {
     background-color: #007bff;
     color: #fff;
-    padding: .4rem .8rem;
+    padding: .3rem .8rem;
+    font-size: .9rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
