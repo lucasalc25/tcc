@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de TCC</title>
     <link rel="stylesheet" href="index_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <header class="header">
     <div class="menu-container">
       <a href="#"><h1>TCCMaster</h1></a>
       <nav class="navbar-left">
         <a href="/index.html" active>Home</a>
-        <a href="#">Sobre</a>
         <a href="#">Cursos</a>
         <a href="#">Orientadores</a>
         <a href="#">Biblioteca</a>
+        <a href="#">Suporte</a>
       </nav>
       <nav class="navbar-right">
         <form action="#" method="get">
-          <input type="text" name="search" id="search" placeholder="O que está procurando?">
+          <input type="text" name="search" id="search-bar" placeholder="O que está procurando?">
           <div class="btnSearch">
             <button type="submit">Pesquisar</button>
           </div>
@@ -26,6 +28,13 @@
         <a href="/login.html">Login</a>
         <a href="#">Cadastre-se</a>
       </nav>
+      <div class="icons">
+        <span id="mobile-menu" class="material-icons">menu</span>
+        <span id="search" class="material-icons">search</span>
+        <span id="user" class="material-icons">
+          account_circle
+        </span>
+      </div>
     </div>
 </header>
 <body>
