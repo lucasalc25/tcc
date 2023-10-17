@@ -98,9 +98,9 @@ header {
 
 .navbar-right > form > input {
     align-items: center;
-    font: 1.4em sans-serif;
+    font: 1.6em sans-serif;
     width: 16rem;
-    height: 1.8rem;
+    height: 2.4rem;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
@@ -118,7 +118,7 @@ header {
 button {
     background-color: #007bff;
     color: #fff;
-    padding: .4rem .8rem;
+    padding: .7rem .8rem;
     font-size: .9rem;
     border: none;
     border-radius: 3px;
