@@ -3,11 +3,13 @@ function login() {
     const senha = document.getElementById('senha').value;
 
     // Simulando autenticação
-    if (cpf === 'admin' && senha === 'admin') {
+    if (cpf === '123' && senha === '1234') {
         location.href = 'home_coord.html';
-    } else if (cpf === '987654321' && senha === '1234') {
+    } else if (cpf === '321' && senha === '1234') {
         location.href = 'home_prof.html';
     } else {
         alert('CPF ou senha incorretos. Tente novamente.');
     }
 }
+
+
