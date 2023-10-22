@@ -159,55 +159,6 @@ header .search .searchBtn {
     margin-left: 10px;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 1159px){
-    .searchBtn {
-        left: 0;
-    }
-    /* Mostrar ícone do menu*/
-
-    .menu {
-        position: absolute;
-        display:block;
-        align-items: center;
-    }
-    .menu > .menuToggle {
-        color: rgb(255, 255, 255);
-        font-size: 1.3em;
-        cursor: pointer;
-        transform: translateX(30px);
-        z-index: 10;
-    }
-    /* Esconder as opções do menu*/
-    header .navigation {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
-        left: 100%
-    }
-    header.open .navigation {
-        top: 80px;
-        opacity: 1;
-        visibility: visible;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background: #242529;
-        text-align: center;
-        width: 100%;
-        height: calc(100vh - 80px);
-        padding: 40px;
-        border-top: 1px solid rgb(255, 255, 255);
-    }
-    header.open .navigation li a {
-        font-size: 1.25em;
-    }
-    .hide {
-        display: none;
-    }
-}
-
 .main {
     height: 100%;
 }
@@ -283,5 +234,53 @@ header .search .searchBtn {
     }
     .box-info-single p {
         font-size: 1.9rem;
+    }
+    .searchBtn {
+        left: 0;
+    }
+
+    /* Mostrar ícone do menu*/
+    .menu {
+        position: absolute;
+        display:block;
+        align-items: center;
+    }
+    .menu > .menuToggle {
+        color: rgb(255, 255, 255);
+        font-size: 1.3em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+    }
+    /* Esconder as opções do menu*/
+    header .navigation {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%
+    }
+    header.open .navigation {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: #242529;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid rgb(255, 255, 255);
+    }
+
+    header.open .navigation li a {
+        font-size: 1.25em;
+    }
+    
+    .hide {
+        display: none;
     }
 }
