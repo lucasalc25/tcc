@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCCMaster</title>
     <link rel="stylesheet" href="home_coord_style.css">
-    <link rel="stylesheet" href="">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="">
 </head>
 <body>
 
@@ -38,43 +38,37 @@
   </div>
 </header>
 
-<section class="main">
-  <div></div>
+<section class="content">
+    <div class="secao-titulo">
+        <h2>Dashboard Coordenador</h2>
+        <br>
+        <hr>
+        <p><ion-icon name="home-sharp" class="homeBtn"></ion-icon> / Dashboard</p>
+    </div>
+    <div class="box-info">
+      <div class="box-info-single" style="background: linear-gradient(45deg, #2ed8b6,#59e0c5);">
+        <h3>Projetos Ativos</h3>
+        <p>9</p>
+      </div>
+      <div class="box-info-single" style="background: linear-gradient(45deg, #ff5370,#ff869a);">
+        <h3>Projetos Atrasados</h3>
+        <p>4</p>
+      </div>
+      <div class="box-info-single" style="background: linear-gradient(45deg, #4099ff,#73b4ff);">
+        <h3>Projetos Concluídos</h3>
+        <p>2</p>
+      </div>
+      <div class="box-info-single" style="background: linear-gradient(45deg, #ffb64d,#ffcb80);">
+        <h3>Projetos Vagos</h3>
+        <p>3</p>
+      </div>
+    </div>
+
+  </div>
 </section>
 </body>
+
+<script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<script>
-  /* Armazena o estado das classes em variáveis*/
-  let searchBtn = document.querySelector('.searchBtn');
-  let closeBtn = document.querySelector('.closeBtn');
-  let searchBox = document.querySelector('.searchBox');
-  let navigation = document.querySelector('.navigation');
-  let menuToggle = document.querySelector('.menuToggle');
-  let header = document.querySelector('header');
-
-  /* Função para clique no ícone buscar*/
-  searchBtn.onclick = function() {
-    searchBox.classList.add('active');
-    closeBtn.classList.add('active');
-    searchBtn.classList.add('active');
-  }
-
-  /* Função para clique no ícone fechar*/
-  closeBtn.onclick = function() {
-    searchBox.classList.remove('active');
-    closeBtn.classList.remove('active');
-    searchBtn.classList.remove('active');
-  }
-
-  /* Função para clique no ícone menu*/
-  menuToggle.onclick = function() {
-    header.classList.toggle('open');
-  }
-
-</script>
-<body>
-   
-</body>
 </html>
