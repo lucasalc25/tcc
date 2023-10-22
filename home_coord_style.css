@@ -68,21 +68,9 @@ header ul li a {
     letter-spacing: 0.2em;
 }
 
-header ul li a::before {
-    content: ' ';
-    position: absolute;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background: yellow;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-    transform-origin: right;
-}
-
-header ul li a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
+header ul li a:hover {
+    font-weight: bold;
+    color: #ffe600;
 }
 
 
@@ -201,7 +189,9 @@ header .search .searchBtn {
         left: 0;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         background: #242529;
+        text-align: center;
         width: 100%;
         height: calc(100vh - 80px);
         padding: 40px;
