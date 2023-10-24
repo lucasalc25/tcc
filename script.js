@@ -1,11 +1,13 @@
 /* Armazena o estado das classes em variáveis*/
 const nav = document.querySelector('.nav');
+const body = document.querySelector('.content');
 
   searchIcon = document.querySelector('#searchIcon'),
   navOpenBtn = document.querySelector('.navOpenBtn'),
   navCloseBtn = document.querySelector('.navCloseBtn');
 
   searchIcon.addEventListener("click", () => {
+    body.classList.toggle("bodyDown");
     nav.classList.toggle("openSearch");
     nav.classList.remove("openNav");
     if(nav.classList.contains("openSearch")) {

@@ -132,7 +132,7 @@ a {
 }
 
 .secao-titulo h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .secao-titulo p {
@@ -141,7 +141,7 @@ a {
 
 .secao-titulo p .homeBtn {
     color: #242529;
-    border-color: #ffe600;
+    
 }
 
 hr {
@@ -184,7 +184,7 @@ hr {
 }
 
 .box-monitor {
-    height: 590px;
+    height: 100%;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -192,11 +192,11 @@ hr {
 }
 
 .box-monitor h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .box-monitor p {
     color: #0073f6;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 20px 10px;
 }
 
@@ -232,6 +232,10 @@ hr {
 
 /* Responsividade abaixo de 768px de largura*/
 @media only screen and (max-width: 768px) {
+    .content.bodyDown {
+        opacity: 0;
+        pointer-events: none;
+    }
     .nav {
         padding: 15px 20px;
         z-index: 1;
