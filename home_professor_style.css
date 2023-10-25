@@ -227,7 +227,7 @@ hr {
         height: 100%;
         max-width: 280px;
         width: 100%;
-        row-gap: 7%;
+        row-gap: 5%;
         padding: 80px 10px;
         background-color: #242529;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
@@ -311,5 +311,3 @@ hr {
         margin-bottom: 5%;
     }
 }
-
-

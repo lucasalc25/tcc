@@ -47,7 +47,14 @@ menuToggle.onclick = function() {
 }
 
 function login() {
-  location.href = 'home_coord.html';
+  const cpf = document.getElementById('cpf').value;
+    const senha = document.getElementById('senha').value;
+    
+  if (cpf == "12345" && senha == "123.") {
+    location.href = 'home_coord.html';
+  } else if (cpf == "54321" && senha == "123.") {
+    location.href = 'home_professor.html';
+  }
 }
 
 
