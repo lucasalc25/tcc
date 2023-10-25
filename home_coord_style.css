@@ -211,6 +211,10 @@ hr {
     padding: 20px 10px;
 }
 
+#feed > p {
+    padding-bottom: 45px;
+}
+
 /* Responsividade abaixo de 1440px de largura */
 @media only screen and (max-width: 1440px){
     .nav {
@@ -309,6 +313,19 @@ hr {
 
     .box-monitor {
         margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-height: 1080px) { 
+    .nav-links {
+        row-gap: 2.5%;
+    }
+}
+
+@media only screen and (max-height: 768px) {
+    .nav-links {
+        padding: 40px 10px;
+        row-gap: 0.5%;
     }
 }
 

@@ -54,6 +54,8 @@ function login() {
     location.href = 'home_coord.html';
   } else if (cpf == "54321" && senha == "123.") {
     location.href = 'home_professor.html';
+  } else {
+    alert("CPF ou Senha incorretos. Tente novamente!");
   }
 }
 
