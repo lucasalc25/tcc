@@ -46,16 +46,30 @@ menuToggle.onclick = function() {
   navbar.classList.toggle('open');
 }
 
-function login() {
-  const cpf = document.getElementById('cpf').value;
-    const senha = document.getElementById('senha').value;
+function login(cpf, senha) {
+  var cpfDig = cpf;
+  var senhaDig = senha;
     
-  if (cpf == "12345" && senha == "123.") {
+  if (cpfDig == cpf && senhaDig == senha) {
     location.href = 'home_coord.html';
-  } else if (cpf == "54321" && senha == "123.") {
-    location.href = 'home_professor.html';
-  } else {
+  }
+  else {
     alert("CPF ou Senha incorretos. Tente novamente!");
+  }
+}
+
+/* Recebe os valores dos campos de cadastro */
+function cadastro(){
+  try {
+    nome = document.getElementById('nome').value;
+    cpf = document.getElementById('cpf').value;
+    email = document.getElementById('email').value;
+    senha = document.getElementById('senha').value;
+
+    location.href = 'index.html'
+  }
+  catch (error){
+    alert("Dados inválidos! Verifique e tente novamente!")
   }
 }
 

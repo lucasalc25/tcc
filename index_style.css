@@ -40,6 +40,10 @@ body {
     transition: 0.5s unset;
 }
 
+.logo:hover {
+    color: transparent;
+}
+
 #cpfLabel {
     margin-top: 7%;
 }
