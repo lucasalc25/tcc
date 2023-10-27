@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">TCCMaster</a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="#">Usuário</a></li>
+          <li><a href="/home_coord.html">Início</a></li>
+          <li><a href="orientadores.html" active>Orientadores</a></li>
+          <li><a href="#">Alunos</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Notificações</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+          <li><a href="/index.html">Logout</a></li>
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Pesquise aqui..."/>
+        </div>
+      </nav>
+    
+    <div class="content">
+        <div class="box-info">
+            <div class="box-info-single">
+                <h3>Informações Pessoais</h3>
+                <br>
+                <hr>
+                <br>
+                <p>Nome:</p>
+                <br>
+                <p>RA:</p>
+                <br>
+                <p>CPF:</p>
+                <br>
+                <p>Email:</p>
+                <br>
+                <p>Endereço:</p>
+                <br>
+                <p>Formação:</p>
+                <br>
+                <button type="submit" onclick="addOrientador(); return false">Adicionar Orientador</button>
+                <button type="submit" onclick="MonitorarOrientador(); return false">Monitorar Orientador</button>
+                <button type="submit" onclick="Salvar(); return false">Salvar</button>
+            </div>
+            <div class="box-info-single">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

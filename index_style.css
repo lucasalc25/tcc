@@ -15,6 +15,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -22,7 +23,7 @@ body {
 
 .login-form {
     background-color: #ffff;
-    width: 27rem;
+    width: 22rem;
     height: 29rem;
     padding: 20px 20px;
     border-radius: 9px;
@@ -31,20 +32,18 @@ body {
 }
 
 .logo {
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
     transition: 0.5s unset;
 }
 
 .logo img {
+    margin-top: 3%;
     width: 280px;
     height: 70px;
 }
 
 
 #cpfLabel {
-    margin-top: 7%;
+    margin-top: 9%;
 }
 
 label {
@@ -76,6 +75,7 @@ input[type="password"] {
 button {
     background-color: #007bff;
     color: #ffff;
+    margin-top: 1.5%;
     padding: 10px 20px;
     border: none;
     border-radius: 7px;
@@ -87,7 +87,8 @@ button:hover {
 }
 
 .options {
-    margin: 5% 13%;
+    margin: 0 13%;
+    margin-top: 10%;
     padding: 0;
     padding-bottom: 0;
     display: flex;
@@ -105,10 +106,7 @@ a:hover {
 }
 
 .container p {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 78%;
+    margin-top: 2%;
     font-weight: bold;
     font-size: 14px;
 }

@@ -60,17 +60,29 @@ function login(cpf, senha) {
 
 /* Recebe os valores dos campos de cadastro */
 function cadastro(){
-  try {
-    nome = document.getElementById('nome').value;
-    cpf = document.getElementById('cpf').value;
-    email = document.getElementById('email').value;
-    senha = document.getElementById('senha').value;
+  /*try { */
+  nome = document.getElementById('nome').value;
+  cpf = document.getElementById('cpf').value;
+  email = document.getElementById('email').value;
+  senha = document.getElementById('senha').value;
 
-    location.href = 'index.html'
+  alert("Clique em OK para ser redirecionado para uma nova página.");
+
+  confirmacao = confirm("Você deseja ser redirecionado para a página de login?");
+
+  function redirecionarParaNovaPagina() {
+    location.href = "http://127.0.0.1:5500/index.html"; // Substitua com a URL desejada
   }
-  catch (error){
-    alert("Dados inválidos! Verifique e tente novamente!")
+  
+  if(confirmacao) {
+    redirecionarParaNovaPagina();
   }
+  
 }
+  /* catch {
+    alert("Dados inválidos! Verifique e tente novamente!")
+  } 
+} */
+
 
 
